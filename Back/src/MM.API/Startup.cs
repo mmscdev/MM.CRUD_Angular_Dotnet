@@ -30,7 +30,7 @@ namespace MM.API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MM.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "_API", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace MM.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MM.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "_API v1"));
             }
 
             app.UseHttpsRedirection();
