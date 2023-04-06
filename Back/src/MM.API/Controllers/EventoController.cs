@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using MM.API.Models;
+using MM.WebApi.Data;
+using MM.WebApi.Models;
 
 namespace MM.API.Controllers;
 
@@ -7,48 +8,25 @@ namespace MM.API.Controllers;
 [Route("[controller]")]
 public class EventoController : ControllerBase
 {
-    private IEnumerable<Evento> _eventos = new Evento[]
-    {
-         new Evento{ 
-            EventoId = 1,
-            Tema = "Curso Angular 11 e .NET 5",
-            Local = "Belo Horizonte",
-            Lote = "1° Lote",
-            QtdPessoas = 256,
-            DataEvento = DateTime.Now.AddDays(2).ToString(),
-            ImagemURL = "GOTO.png"
-          },
-           new Evento{ 
-            EventoId = 2,
-            Tema = "Show ColdPlay",
-            Local = "Belo Horizonte",
-            Lote = "1° Lote",
-            QtdPessoas = 5000,
-            DataEvento = DateTime.Now.AddDays(2).ToString(),
-            ImagemURL = "GOTO.png"
-          }
-    };
-
     private readonly ILogger<EventoController> _logger;
+    public DataContext Context;
 
-    public EventoController(ILogger<EventoController> logger)
+    public EventoController(ILogger<EventoController> logger, DataContext context)
     {
         _logger = logger;
+        Context = context;
     }
 
-    [HttpPost(Name = "PostEvento")]
-    public string Post()
-    {
-        return "value";
-    }  
-    [HttpGet("{id}")]
-    public IEnumerable<Evento> Get(int id)
-    {
-        return _eventos.Where(_  => _.EventoId == id);
-    }
-    [HttpGet(Name = "GetEvento")]
+
+    [HttpGet]
     public IEnumerable<Evento> Get()
     {
-        return _eventos;
+        return Context.Eventos.ToList();
+    } 
+    
+    [HttpGet("{id}")]
+    public Evento? Get(int id)
+    {
+        return Context.Eventos.FirstOrDefault(_=> _.Id == id);
     }
 }

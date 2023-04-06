@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\Back\\src\\MM.API\\MM.API.csproj": {}
+    "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj": {}
   },
   "projects": {
-    "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\Back\\src\\MM.API\\MM.API.csproj": {
+    "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\Back\\src\\MM.API\\MM.API.csproj",
+        "projectUniqueName": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
         "projectName": "MM.API",
-        "projectPath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\Back\\src\\MM.API\\MM.API.csproj",
+        "projectPath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
         "packagesPath": "C:\\Users\\Mayara\\.nuget\\packages\\",
-        "outputPath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\Back\\src\\MM.API\\obj\\",
+        "outputPath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mayara\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,34 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "SQLitePCLRaw.bundle_e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "SQLitePCLRaw.core": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
