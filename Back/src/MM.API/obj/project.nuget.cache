@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eh14lLi3cuvPLwzsiY/Rfbq7JFC0m5Kd9qEmZoyMind792YHhqz1UhaPLMj9NUWHoz70G7tTTs4gimTjISvbNw==",
+  "dgSpecHash": "CsSVSy9bv6mY+gNjqpHh3ZF/ABNKxYEGGvZHMtmVMrw/ne/Td6sSXWMZlqvJvJokI1aVg5Y3st/vTj+G/3NHgg==",
   "success": true,
   "projectFilePath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mayara\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.3\\microsoft.aspnetcore.jsonpatch.5.0.3.nupkg.sha512",
+    "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.3\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.3.nupkg.sha512",
+    "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.15\\microsoft.data.sqlite.core.6.0.15.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.15\\microsoft.entityframeworkcore.6.0.15.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.15\\microsoft.entityframeworkcore.abstractions.6.0.15.nupkg.sha512",
@@ -25,6 +28,8 @@
     "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Mayara\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Mayara\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
