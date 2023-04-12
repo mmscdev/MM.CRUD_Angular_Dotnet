@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using MM.WebApi.Data;
-using MM.WebApi.Models;
+using MM.Persistence;
+using MM.Domain;
 
 namespace MM.API.Controllers;
 
@@ -9,9 +9,8 @@ namespace MM.API.Controllers;
 public class EventoController : ControllerBase
 {
     private readonly ILogger<EventoController> _logger;
-    public DataContext Context;
 
-    public EventoController(ILogger<EventoController> logger, DataContext context)
+    public EventoController(ILogger<EventoController> logger, EventosContext context)
     {
         _logger = logger;
         Context = context;
