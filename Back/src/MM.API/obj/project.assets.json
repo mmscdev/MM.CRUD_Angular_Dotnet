@@ -671,6 +671,47 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "MM.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MM.Domain": "1.0.0",
+          "MM.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MM.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MM.Application.dll": {}
+        }
+      },
+      "MM.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MM.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MM.Domain.dll": {}
+        }
+      },
+      "MM.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MM.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.15",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "6.0.15",
+          "SQLitePCLRaw.bundle_e_sqlite3": "2.1.4",
+          "SQLitePCLRaw.core": "2.1.4"
+        },
+        "compile": {
+          "bin/placeholder/MM.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MM.Persistence.dll": {}
+        }
       }
     }
   },
@@ -1485,10 +1526,26 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "MM.Application/1.0.0": {
+      "type": "project",
+      "path": "../MM.Application/MM.Application.csproj",
+      "msbuildProject": "../MM.Application/MM.Application.csproj"
+    },
+    "MM.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MM.Domain/MM.Domain.csproj",
+      "msbuildProject": "../MM.Domain/MM.Domain.csproj"
+    },
+    "MM.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../MM.Persistence/MM.Persistence.csproj",
+      "msbuildProject": "../MM.Persistence/MM.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "MM.Application >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.15",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.15",
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 6.0.15",
@@ -1524,7 +1581,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.Application\\MM.Application.csproj": {
+              "projectPath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.Application\\MM.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
