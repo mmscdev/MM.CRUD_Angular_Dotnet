@@ -8,7 +8,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using MM.Application;
+using MM.Application.Contratos;
 using MM.Persistence;
+using MM.Persistence.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,8 +32,15 @@ namespace MM.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<EventosContext>(context => context.UseSqlite(Configuration.GetConnectionString("Default")));
-            services.AddControllers();
+            services.AddControllers()
+                    .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling =
+                        Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                    );;
             services.AddCors();
+            services.AddScoped<IEventoService, EventoService>();
+            services.AddScoped<IGeralPersist, GeralPersist>();
+            services.AddScoped<IEventoPersist, EventoPersist>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MM.WebApi", Version = "v1" });
