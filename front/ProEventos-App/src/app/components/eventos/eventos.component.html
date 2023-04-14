@@ -1,4 +1,4 @@
-<h1>Eventos</h1>
+<app-titulo [titulo]="'Eventos'"></app-titulo>
 
 <hr />
 <div class="row g-3 mb-2">
@@ -16,6 +16,7 @@
     <tr>
       <th>
         <button type="button" class="btn btn-outline-light btn-sm" (click)="alterarImagem()">
+          <i class=" {{!mostrarImagem? 'fa fa-eye' : 'fa fa-eye-slash'}}"></i>
           {{!mostrarImagem? "Exibir" : "Ocultar"}}
         </button>
       </th>
@@ -35,15 +36,17 @@
         [isAnimated]="true"
          src="/assets/{{item.imagemURL}}" [style.width.px]="80"/>
       </td>
+      <td></td>
       <td>{{item.id}}</td>
       <td>{{item.tema}}</td>
-      <td>{{item.local}}</td>
-      <td>{{item.dataEvento}}</td>
-      <td>{{item.qtdPessoas}}</td>
-      <td></td>
+      <td>{{item.local | uppercase}}</td>
+      <td>{{item.dataEvento | DateTimeFormat}}</td>
+      <td>{{item.lotes[0].nome}}</td>
       <td>
-        <button type="button" class="btn btn-primary btn-sm me-2">editar</button>
-        <button type="button" class="btn btn-danger btn-sm">excluir</button>
+        <button type="button" class="btn btn-primary btn-sm me-2" (click)="openModal(template)">
+          <i class="fa fa-edit"></i></button>
+        <button type="button" class="btn btn-danger btn-sm" (click)="openModal(template)"><i class="fa fa-trash" ></i></button>
+
       </td>
     </tr>
   </tbody>
@@ -55,3 +58,10 @@
     </tr>
   </tfoot>
 </table>
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Tem certeza que quer deletar o Evento de Código ?</p>
+    <button type="button" class="btn btn-default" (click)="confirm()">Sim</button>
+    <button type="button" class="btn btn-primary" (click)="decline()">Não</button>
+  </div>
+</ng-template>
