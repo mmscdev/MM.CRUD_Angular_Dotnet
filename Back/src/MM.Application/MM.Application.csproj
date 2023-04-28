@@ -9,4 +9,7 @@
    <ProjectReference Include="..\MM.Domain\MM.Domain.csproj" />
    <ProjectReference Include="..\MM.Persistence\MM.Persistence.csproj" />
  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
 </Project>

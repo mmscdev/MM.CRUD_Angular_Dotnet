@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CsSVSy9bv6mY+gNjqpHh3ZF/ABNKxYEGGvZHMtmVMrw/ne/Td6sSXWMZlqvJvJokI1aVg5Y3st/vTj+G/3NHgg==",
+  "dgSpecHash": "nSXenCAwC3ZO5/OdxC+gEmqDoDuhieNX//FTl48J6dPNmKaA6O/iOrc2qO2uhvo7Os4g7OycgiRP8AHPNWO2VA==",
   "success": true,
-  "projectFilePath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
+  "projectFilePath": "c:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mayara\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Mayara\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.3\\microsoft.aspnetcore.jsonpatch.5.0.3.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.3\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.3.nupkg.sha512",
