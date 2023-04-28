@@ -1,15 +1,16 @@
+using MM.Application.Dtos;
 using MM.Domain;
 
 namespace MM.Application.Contratos
 {
     public interface IEventoService
     { 
-        Task<Evento> AddEventos(int userId, Evento model);
-        Task<Evento> UpdateEvento(int userId, int eventoId, Evento model);
+        Task<EventoDto> AddEventos(int userId, EventoDto model);
+        Task<EventoDto> UpdateEvento(int userId, int eventoId, EventoDto model);
         Task<bool> DeleteEvento(int userId, int eventoId);
 
-        Task<Evento[]> GetAllEventosByTemaAsync(string tema);
-        Task<Evento[]> GetAllEventosAsync(bool includePalestrantes= false);
-        Task<Evento> GetEventoByIdAsync(int userId, int eventoId, bool includePalestrantes = false);
+        Task<EventoDto[]> GetAllEventosByTemaAsync(string tema);
+        Task<EventoDto[]> GetAllEventosAsync(bool includePalestrantes= false);
+        Task<EventoDto> GetEventoByIdAsync(int userId, int eventoId, bool includePalestrantes = false);
     }
 }
