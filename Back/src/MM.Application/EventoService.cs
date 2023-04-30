@@ -53,7 +53,7 @@ namespace MM.Application
                 if (evento == null) return null;
 
                 model.Id = evento.Id;
-                model.UserId = userId;
+                //model.UserId = userId;
 
                 _mapper.Map(model, evento);
 
