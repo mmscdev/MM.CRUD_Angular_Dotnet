@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nSXenCAwC3ZO5/OdxC+gEmqDoDuhieNX//FTl48J6dPNmKaA6O/iOrc2qO2uhvo7Os4g7OycgiRP8AHPNWO2VA==",
+  "dgSpecHash": "FBNArzoU/NF849XS59yrFNyWllFyGMNhvpavINQovFTZARWcQARN2FqXHojDiO1dHpTqWUI8GjTDYA35C5kGdg==",
   "success": true,
-  "projectFilePath": "c:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
+  "projectFilePath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mayara\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Mayara\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

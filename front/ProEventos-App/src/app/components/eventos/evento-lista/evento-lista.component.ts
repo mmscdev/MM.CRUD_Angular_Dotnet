@@ -16,6 +16,7 @@ export class EventoListaComponent {
   public eventos: any = [];
   public eventosFiltrados: any = [];
   message?: string;
+  eventoId!: number;
 
   mostrarImagem: boolean = true;
   private _filtroLista: string = '';
@@ -56,14 +57,32 @@ export class EventoListaComponent {
   this.router.navigate([`eventos/detalhe/${id}`]);
   }
 
-  openModal(template: TemplateRef<any>) {
+  openModal(event: any,template: TemplateRef<any>, eventoId: number) {
+    event.stopPropagation();
+    this.eventoId = eventoId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
   confirm(): void {
-    this.message = 'Confirmed!';
     this.modalRef?.hide();
-    this.toastr.success('Hello world!', 'Toastr fun!');
+    this.message = 'Confirmed!';
+    this.spinner.show();
+
+    this.eventoService.deleteEvento(this.eventoId).subscribe(
+      (result : any) => {
+        if(result.message == "Deletado"){
+          this.toastr.success('O Evento foi deletado com Sucesso.', 'Deletado!');
+          this.spinner.hide();
+          this.getEventos();
+        }
+      },
+      (error: any) => {
+        console.log(error);
+        this.toastr.error(`Erro ao tentar deletar o evento ${this.eventoId}`);
+        this.spinner.hide();
+      },
+      () =>{this.spinner.hide();}
+    );
   }
 
   decline(): void {

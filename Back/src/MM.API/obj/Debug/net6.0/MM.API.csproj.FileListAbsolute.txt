@@ -72,3 +72,5 @@ C:\Labs-Dev\Crud_Angular_.net\MM.CRUD_Angular_Dotnet\back\src\MM.API\bin\Debug\n
 C:\Labs-Dev\Crud_Angular_.net\MM.CRUD_Angular_Dotnet\back\src\MM.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Labs-Dev\Crud_Angular_.net\MM.CRUD_Angular_Dotnet\back\src\MM.API\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Labs-Dev\Crud_Angular_.net\MM.CRUD_Angular_Dotnet\back\src\MM.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Labs-Dev\Crud_Angular_.net\MM.CRUD_Angular_Dotnet\back\src\MM.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Labs-Dev\Crud_Angular_.net\MM.CRUD_Angular_Dotnet\back\src\MM.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

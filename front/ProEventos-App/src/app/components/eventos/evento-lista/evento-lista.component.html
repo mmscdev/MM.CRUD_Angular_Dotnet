@@ -64,7 +64,7 @@
           <button
             type="button"
             class="btn btn-danger btn-sm"
-            (click)="openModal(template)"
+            (click)="openModal($event , template, item.id)"
           >
             <i class="fa fa-trash"></i>
           </button>
@@ -82,7 +82,7 @@
 </div>
 <ng-template #template>
   <div class="modal-body text-center">
-    <p>Tem certeza que quer deletar o Evento de Código ?</p>
+    <p>Tem certeza que quer deletar o Evento de Código {{eventoId}}?</p>
     <button type="button" class="btn btn-default" (click)="confirm()">
       Sim
     </button>

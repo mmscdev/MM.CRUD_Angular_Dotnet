@@ -781,6 +781,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "MM.Domain": "1.0.0",
           "MM.Persistence": "1.0.0"
         },
@@ -1831,7 +1832,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "MM.Application >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.3",
       "Microsoft.EntityFrameworkCore >= 6.0.15",
@@ -1849,11 +1849,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
+      "projectUniqueName": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
       "projectName": "MM.API",
-      "projectPath": "c:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
+      "projectPath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\MM.API.csproj",
       "packagesPath": "C:\\Users\\Mayara\\.nuget\\packages\\",
-      "outputPath": "c:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\obj\\",
+      "outputPath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mayara\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1863,14 +1863,15 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.Application\\MM.Application.csproj": {
-              "projectPath": "c:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.Application\\MM.Application.csproj"
+            "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.Application\\MM.Application.csproj": {
+              "projectPath": "C:\\Labs-Dev\\Crud_Angular_.net\\MM.CRUD_Angular_Dotnet\\back\\src\\MM.Application\\MM.Application.csproj"
             }
           }
         }
@@ -1885,10 +1886,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "[12.0.1, )"
-          },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
             "version": "[5.0.3, )"
